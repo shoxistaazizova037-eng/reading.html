@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympiad Reading Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f9ff;
+      color: #333;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      user-select: none;
+    }
+    h1 {
+      text-align: center;
+      color: #0056b3;
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #004080;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+    .reading {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    ol {
+      margin-left: 20px;
+    }
+    .warning {
+      display: none;
+      background-color: #ffdddd;
+      color: #a00;
+      border: 1px solid #a00;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .motivation {
+      text-align: center;
+      background: #e6f7ff;
+      padding: 15px;
+      border-radius: 10px;
+      color: #004d80;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏆 Olympiad Reading Practice 🏆</h1>
+  <div class="warning" id="warning">⚠️ Screenshot detected! Please focus on reading only.</div>
+
+  <!-- Reading 1 -->
+  <div class="reading">
+    <h2>Reading 1: Why Students Feel Nervous During the Olympiad</h2>
+    <p>
+      Many students feel nervous before an Olympiad because they want to perform their best and make their teachers proud. 
+      The feeling of nervousness often comes from caring deeply about success. Some students also compare themselves to others, 
+      which increases pressure. However, being a little nervous can actually help — it shows that you care and that your brain is 
+      ready to focus. The best way to manage this feeling is to prepare well, sleep properly, and believe in yourself.
+    </p>
+    <ol>
+      <li>Why do many students feel nervous before an Olympiad?</li>
+      <li>What does nervousness show about a student?</li>
+      <li>How can a little nervousness be useful?</li>
+      <li>What are two ways to manage nervousness?</li>
+      <li>What happens when students compare themselves to others?</li>
+    </ol>
+  </div>
+
+  <!-- Reading 2 -->
+  <div class="reading">
+    <h2>Reading 2: Billie Eilish – A Voice for the Young Generation</h2>
+    <p>
+      Billie Eilish became famous at a very young age with her song “Ocean Eyes.” Unlike many pop stars, 
+      she writes most of her songs with her brother Finneas at home. Her music often talks about emotions, 
+      self-acceptance, and the struggles young people face today. Billie is known for her unique style, baggy clothes, 
+      and honesty about mental health. Many fans say her songs make them feel understood and less alone. 
+      Even though fame can be stressful, Billie says she wants to use her platform to inspire kindness and confidence in others.
+    </p>
+    <ol>
+      <li>Who helps Billie Eilish write her songs?</li>
+      <li>What are common topics in her music?</li>
+      <li>Why do many fans connect with her songs?</li>
+      <li>How is Billie different from many other pop stars?</li>
+      <li>What does Billie want to inspire in her listeners?</li>
+    </ol>
+  </div>
+
+  <!-- Reading 3 -->
+  <div class="reading">
+    <h2>Reading 3: The Pros and Cons of Watching Anime</h2>
+    <p>
+      Anime has become popular all over the world, and many young people spend hours watching their favorite series. 
+      One of the biggest advantages of anime is that it teaches creativity and Japanese culture. 
+      It also helps people learn life lessons about friendship, courage, and hard work. 
+      However, watching too much anime can cause problems like poor sleep, eye strain, or less time for studies. 
+      Like anything, balance is important. Watching anime is great entertainment, 
+      but it should never replace real-life experiences and human connections.
+    </p>
+    <ol>
+      <li>Why do people enjoy watching anime?</li>
+      <li>What can anime teach viewers?</li>
+      <li>What are two possible problems from watching too much anime?</li>
+      <li>Why is balance important when watching anime?</li>
+      <li>What should anime not replace?</li>
+    </ol>
+  </div>
+
+  <div class="motivation">
+    🌟 Great job reading! Remember: Every test you finish makes you stronger.  
+    Keep believing in yourself — you’re getting closer to your goal every day! 💪✨
+  </div>
+
+  <script>
+    // Screenshot detection
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "PrintScreen") {
+        e.preventDefault();
+        const warn = document.getElementById("warning");
+        warn.style.display = "block";
+        setTimeout(() => warn.style.display = "none", 4000);
+        alert("⚠️ Screenshots are not allowed!");
+      }
+    });
+    // Disable right-click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    // Disable copy / paste
+    document.addEventListener('copy', e => e.preventDefault());
+    document.addEventListener('cut', e => e.preventDefault());
+    document.addEventListener('paste', e => e.preventDefault());
+  </script>
+
+</body>
+</html>
